@@ -34,31 +34,31 @@ TeamProject + Reservation system + Spring legacy Maven MVC project + Oracle
 
 
 ## 🛠 DB 설계 (추가예정) (pk=Primary Key , fk = Foreign Key)
-- Users
+- Users :
 
-- Ticket
+- Ticket :
   *id(pk)
   *name
   *price
   
-- User_Ticket
+- User_Ticket :
   *id(pk)
   *ticketId(fk) = Ticket(id)
   *usersId(fk) = Users(id)
   *reserDate
   *buyDate
   
-- Attraction
+- Attraction :
   *id(pk)
   *name
 
-- AttrTime
+- AttrTime :
   *id(pk)
   *time
   *seat
   *attrId(fk) = Attraction(id)
   
-- Notice
+- Notice :
 
 
 ## 🕹 구현 기능
