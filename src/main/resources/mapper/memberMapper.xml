@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="member">
+	<select id="memberList" resultType="com.reser.dto.MemberDTO">
+		select * from user_tb
+	</select>
+	<select id="getMember" resultType="com.reser.dto.MemberDTO">
+		select * from user_tb where user_id=#{user_id}
+	</select>
+	<!-- 로그인 : 컨트롤러에서 처리 -->
+	<select id="signIn" resultType="com.reser.dto.MemberDTO">
+		select * from user_tb where user_id = #{user_id}
+	</select>
+	<!-- 로그인 : DAO에서 처리 -->
+	<select id="loginCheck" resultType="com.reser.dto.MemberDTO">
+		select user_id, user_pw, user_name from user_tb where user_id = #{user_id}
+	</select>
+	<!-- 로그인 : AJax로 로그인 처리 -->	
+	<select id="login" resultType="com.reser.dto.MemberDTO">
+		select user_id, user_pw, user_name from user_tb where user_id = #{user_id}
+	</select>	
+	
+	<!-- 회원 가입 : dao에서 insert("member.memberInsert", mdto) -->
+	<insert id="memberInsert">
+		<selectKey keyProperty="useridSeq" order="BEFORE" resultType="integer">
+			select user_sq.nextval from dual
+		</selectKey>
+		insert into user_tb values (#{useridSeq}, #{user_id}, #{user_pw}, #{user_name}, #{email}, #{tel}, #{addr1}, #{addr2}, #{postcode}, sysdate, 100, 0)
+	</insert>
+	
+	<!-- 회원 정보 변경 : dao에서 update("member.memberUpdate", mdto) -->
+	<update id="memberUpdate">
+	update user_tb set user_pw=#{user_pw}, user_name=#{user_name}, email=#{email}, tel=#{tel},
+	addr1=#{addr1}, addr2=#{addr2}, postcode=#{postcode} where user_id = #{user_id}
+	</update>
+	
+	<!-- 회원 탈퇴 : dao에서 delete("member.memberDelete", userid) -->	
+	<delete id="memberDelete">
+	delete from user_tb where user_id=#{user_id}
+	</delete>
+</mapper>
