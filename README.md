@@ -36,7 +36,7 @@ TeamProject + Reservation system + Spring legacy Maven MVC project + Oracle
 ## 🛠 DB 설계 (추가예정) (pk=Primary Key , fk = Foreign Key)
 - Users :
 
-- Ticket :
+- Ticket :<br>
   *id(pk)
   *name
   *price
