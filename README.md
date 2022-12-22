@@ -1,4 +1,4 @@
-# Collabo
+# :four_leaf_clover:Collabo
 TeamProject + Reservation system + Spring legacy Maven MVC project + Oracle
 
 ### Spring Lagacy 팀 프로젝트(예약시스템)
