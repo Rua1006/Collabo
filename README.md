@@ -37,25 +37,25 @@ TeamProject + Reservation system + Spring legacy Maven MVC project + Oracle
 - Users :
 
 - Ticket :<br>
-  *id(pk)
-  *name
+  *id(pk)<br>
+  *name<br>
   *price
   
-- User_Ticket :
-  *id(pk)
-  *ticketId(fk) = Ticket(id)
-  *usersId(fk) = Users(id)
-  *reserDate
+- User_Ticket :<br>
+  *id(pk)<br>
+  *ticketId(fk) = Ticket(id)<br>
+  *usersId(fk) = Users(id)<br>
+  *reserDate<br>
   *buyDate
   
-- Attraction :
-  *id(pk)
+- Attraction :<br>
+  *id(pk)<br>
   *name
 
-- AttrTime :
-  *id(pk)
-  *time
-  *seat
+- AttrTime :<br>
+  *id(pk)<br>
+  *time<br>
+  *seat<br>
   *attrId(fk) = Attraction(id)
   
 - Notice :
