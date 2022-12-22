@@ -39,7 +39,7 @@ TeamProject + Reservation system + Spring legacy Maven MVC project + Oracle
   - OracleDB Driver, sqlDeveloper
 
 
-## 🛠 DB 설계 (추가예정) (pk=Primary Key , fk = Foreign Key)
+## 🛠 DB 설계 (클래스 다이어그램 추가예정) (pk=Primary Key , fk = Foreign Key)
 - Users :<br>
   *user_no(pk)<br>
   user_id<br>
