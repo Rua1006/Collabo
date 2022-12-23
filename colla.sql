@@ -77,6 +77,5 @@ create table attrtime (
 desc attrtime;
 create sequence time_sq;
 
-    
-commit;
 
+commit;
