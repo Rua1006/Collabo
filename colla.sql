@@ -36,7 +36,7 @@ select * from ticket;
 
 -- 고객 티켓 테이블
 create table user_ticket (
-    id varchar(30) primary key,
+    id number(19) primary key,
     ticketid number(19) not null,
     constraint fk_ticketid foreign key(ticketid) references ticket (id),
     userid number(19) not null,
@@ -58,22 +58,25 @@ select * from user_ticket;
 
 -- 놀이기구 테이블
 create table attraction (
-    id varchar(30) primary key,
+    id number(19) primary key,
     name varchar(1000) not null
     );
 
 desc attraction;
+create sequence attr_sq;
+
 
 -- 놀이기구 사용시간 테이블
 create table attrtime (
-    id varchar(30) primary key,
+    id number(19) primary key,
     time varchar(1000) not null,
     seat varchar(50),
-    attrid varchar(30) not null,
+    attrid number(19) not null,
      constraint fk_attrid foreign key(attrid) references attraction (id)
     );
-desc attrtime;    
-    
+desc attrtime;
+create sequence time_sq;
+
     
 commit;
 
