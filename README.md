@@ -3,7 +3,7 @@ TeamProject + Reservation system + Spring legacy Maven MVC project + Oracle
 
 ### Spring Lagacy 팀 프로젝트(예약시스템)
 ## 2022-11-17 프로젝트 시작
-## 2022-12-28 프로젝트 공식 
+## 2022-12-28 프로젝트 종료
 
 ## 📢 프로젝트 설명
 - 스프링 활용 예약시스템 팀프로젝트
