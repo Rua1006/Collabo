@@ -2,7 +2,8 @@
 TeamProject + Reservation system + Spring legacy Maven MVC project + Oracle
 
 ### Spring Lagacy 팀 프로젝트(예약시스템)
-### 2022-11-17 프로젝트 시작
+## 2022-11-17 프로젝트 시작
+## 2022-12-28 프로젝트 공식 
 
 ## 📢 프로젝트 설명
 - 스프링 활용 예약시스템 팀프로젝트
@@ -28,7 +29,6 @@ TeamProject + Reservation system + Spring legacy Maven MVC project + Oracle
 - junit
 - JSON
 - Fileupload
-- Security
 
 ## 💻 기술 스택
 - 백엔드
@@ -80,7 +80,22 @@ TeamProject + Reservation system + Spring legacy Maven MVC project + Oracle
 
 
 ## 🕹 구현 기능
-- 회원[로그인(세션 별 로그인 처리), 회원 가입(Ajax활용 아이디 중복 체크 기능), 회원 탈퇴, 회원정보 수정]
-- 예약 시스템[업데이트 중]
-
+- 회원(CRUD)(2022-12-20)<br>
+  회원 가입(Ajax활용 아이디 중복 체크 기능)<br>
+  로그인(세션 별 로그인 처리)<br>
+  회원정보 수정<br>
+  회원 탈퇴
+  
+- 티켓 구매 시스템 [업데이트 중]<br>
+  일반예매, 패스트트랙 구매
+  
+- 예약 시스템 [업데이트 중]<br>
+  일반/패스트 구분
+  
+- 어트랙션(CRUD)[업데이트 중]<br>
+  등록<br>
+  목록불러오기<br>
+  수정<br>
+  삭제
+    
 ## 🔗 Prototype Link
