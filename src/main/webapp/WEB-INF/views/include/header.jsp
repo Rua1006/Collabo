@@ -12,14 +12,14 @@
    	 <!-- <button class="menu-icon" type="button" data-toggle="responsive-menu"></button> -->
      <ul class="dropdown menu" data-dropdown-menu>
       <a href="/" class="logo">
-      	<img class="header_img" src="${path1 }/resources/img/logo_hanmi.png" alt="hami" style="height: 20px;">
+      	<img class="header_img" src="${path1 }/resources/img/logo_test.png" alt="테스트" style="height: 20px;">
       </a>
        <li class="menu-text"><a href="/" class="logo">테스트</a></li>
        <li>
       	<a href="#">예약 테스트</a>
       	<ul class="menu">
       	<li><a href="#">예약</a></li>
-      	<li><a href="#">티켓구매</a></li>
+      	<li><a href="${path1}/ticket/ticketInfo.do">티켓구매</a></li>
  		</ul>
       </li>
        <li class="has-submenu">
