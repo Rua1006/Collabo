@@ -5,11 +5,18 @@
     <select id="tiketList" resultType="com.reser.dto.TicketDTO">
         select id, name, price from ticket
     </select>
-    <!--  티켓 구매 -->
+    <!-- 티켓 구매(일반) -->
     <insert id="ticketInsert" parameterType="com.reser.dto.TicketDTO">
         <selectKey keyProperty="ticketSeq" order="BEFORE" resultType="integer">
             select ticket_sq.nextval from dual
         </selectKey>
-        insert into ticket values(#(ticketidSeq), #{name}, #{price})
+        insert into ticket values(#(ticketidSeq), '일반', 8000)
+    </insert>
+    <!-- 티켓 구매(패스트) -->
+    <insert id="ticketInsert2" parameterType="com.reser.dto.TicketDTO">
+        <selectKey keyProperty="ticketSeq" order="BEFORE" resultType="integer">
+            select ticket_sq.nextval from dual
+        </selectKey>
+        insert into ticket2 values(#(ticketidSeq), '패스트', 16000, #(buydate))
     </insert>
 </mapper>

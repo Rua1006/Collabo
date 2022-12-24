@@ -7,5 +7,5 @@ public class TicketDTO {
     private int ticketidSeq;
     private String name;
     private int price;
-
+    private String buydate;
 }
