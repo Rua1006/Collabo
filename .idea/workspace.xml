@@ -9,15 +9,36 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="599afe2d-96dd-45d3-8459-353ccabaf6ef" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="599afe2d-96dd-45d3-8459-353ccabaf6ef" name="Changes" comment="login member">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/reser/controller/ReservationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/colla.sql" beforeDir="false" afterPath="$PROJECT_DIR$/colla.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/reser/myapp/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reser/myapp/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/reser/controller/TicketController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reser/controller/TicketController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/reser/dto/TicketDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reser/dto/TicketDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/ticketMapper.tld" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/ticketMapper.tld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/include/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/include/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/include/calendar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/calendar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/include/datatables.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/datatables.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/include/datatables.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/datatables.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/include/datepicker.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/datepicker.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/include/datepicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/datepicker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/include/datepicker.ko.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/datepicker.ko.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/include/datepicker.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/datepicker.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/include/datepicker.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/datepicker.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/include/foundation.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/foundation.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/include/foundation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/foundation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/include/foundation.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/foundation.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/include/foundation.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/foundation.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/include/head.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/include/head.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/include/jquery-3.1.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/jquery-3.1.1.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/include/jquery-latest.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/jquery-latest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/include/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/jquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/include/normalize.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/normalize.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/include/what-input.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/what-input.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/ticket/ticketOptionNomal.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/ticket/ticketOptionPass.jsp" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +61,9 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -74,7 +98,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/KBS/collabo/reser",
+    "last_opened_file_path": "C:/KBS/taglibs-standard-jstlel-1.2.5.jar",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -83,7 +107,7 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.28735632",
     "settings.editor.selected.configurable": "project.propCompiler",
-    "spring.configuration.checksum": "8ea967287b20ba487ca86487619bb29a",
+    "spring.configuration.checksum": "8358a413eaf73ed74c998b8a083871af",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -96,11 +120,14 @@
       <recent name="C:\KBS\collabo\reser\src\main\java\com\reser\dao" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\KBS\collabo\reser\src\main\webapp\resources\js" />
+      <recent name="C:\KBS\collabo\reser\src\main\webapp\resources\css" />
+      <recent name="C:\KBS\collabo\reser\src\main\webapp\WEB-INF\views\include" />
       <recent name="C:\KBS\collabo\reser\src\main\java\com\reser\dto" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="Tomcat 9.0.60" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.60" ALTERNATIVE_JRE_ENABLED="false">
+    <configuration name="Tomcat 9.0.60" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.60" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="1.8">
       <option name="UPDATING_POLICY" value="redeploy-artifacts" />
       <deployment>
         <artifact name="myapp:war">
@@ -184,7 +211,6 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="reser:war exploded" />
           <artifact name="myapp:war" />
         </option>
       </method>
@@ -201,6 +227,8 @@
       <workItem from="1671626126386" duration="2982000" />
       <workItem from="1671715287033" duration="4953000" />
       <workItem from="1671721379190" duration="2878000" />
+      <workItem from="1671805586509" duration="2925000" />
+      <workItem from="1671877491911" duration="14881000" />
     </task>
     <servers />
   </component>
@@ -215,6 +243,60 @@
     <option featureType="dependencySupport" implementationName="java:org.hibernate:hibernate-core" />
     <option featureType="dependencySupport" implementationName="java:javax.validation:validation-api" />
     <option featureType="dependencySupport" implementationName="java:org.springframework:spring-webmvc" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/지은" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/병수" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="병수" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/master" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="login member" />
+    <option name="LAST_COMMIT_MESSAGE" value="login member" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

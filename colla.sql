@@ -20,18 +20,29 @@ insert into user_tb values(user_sq.nextval,'dumy', '1234','더미','dumy@goole.c
 select * from user_tb;
 
 -- id를 long 이나 int로 바꿀것
--- 티켓 테이블
+-- 티켓 테이블(일반예매)
 create table ticket (
     id number(19) primary key,
     name varchar(100) not null,
-    price int not null
+    price int not null,
+    buydate varchar(100)
     );
 -- 티켓 아이디 자동증가
 create sequence ticket_sq;
---name : Y=일반 N=패스트
-insert into ticket values (ticket_sq.nextval,'y',1000);
+
+insert into ticket values (ticket_sq.nextval,'일반',1000);
 desc ticket;
 select * from ticket;
+
+-- 티켓 테이블(패스트트랙예매)
+create table ticket2 (
+    id number(19) primary key,
+    name varchar(100) not null,
+    price int not null,
+    buydate varchar(100)
+    );
+insert into ticket2 values (ticket_sq.nextval,'패스트',2000);
+
 
 
 -- 고객 티켓 테이블
