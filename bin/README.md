@@ -76,13 +76,7 @@ TeamProject + Reservation system + Spring legacy Maven MVC project + Oracle
   seat<br>
   *attrId(fk) = Attraction(id)
   
-- Board :<br>
-  *bno(pk)<br>
-  title<br>
-  content<br>
-  author<br>
-  regdate<br>
-  visited
+- Notice :
 
 
 ## 🕹 구현 기능
@@ -103,14 +97,5 @@ TeamProject + Reservation system + Spring legacy Maven MVC project + Oracle
   목록불러오기<br>
   수정<br>
   삭제
-
-- 공지사항(CRUD)(2022-12-25)<br>
-  등록<br>
-  목록불러오기<br>
-  상세내용불러오기<br>
-  수정<br>
-  삭제
-
-
     
 ## 🔗 Prototype Link

@@ -34,10 +34,6 @@ desc ticket;
 select * from ticket;
 
 
--- 공지사항 테이블
-
-
-
 -- 고객 티켓 테이블
 create table user_ticket (
     id number(19) primary key,

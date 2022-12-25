@@ -34,10 +34,6 @@ desc ticket;
 select * from ticket;
 
 
--- 공지사항 테이블
-
-
-
 -- 고객 티켓 테이블
 create table user_ticket (
     id number(19) primary key,
@@ -83,3 +79,24 @@ create sequence time_sq;
 
 
 commit;
+
+
+-- 공지사항 테이블
+create table board_tb(bno int primary key,
+title varchar2(100) not null,
+content varchar2(1000) not null,
+author varchar2(20),
+regdate date default sysdate,
+visited int default 0
+); 
+
+create sequence bseq start with 1;
+
+drop table board_tb;
+
+select * from board_tb;
+
+insert into board_tb values(bseq.nextval, '공지사항 테스트 제목1', '공지사항 테스트 내용1', 'admin', sysdate, 0);
+
+commit;
+

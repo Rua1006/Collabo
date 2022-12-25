@@ -39,7 +39,7 @@
 	<beans:bean id="sampleInterceptor" class="com.reser.util.SampleInterceptor" />
 	<beans:bean id="loginInterceptor" class="com.reser.util.LoginCheckInterceptor" />
 	<beans:bean id="adminInterceptor" class="com.reser.util.AdminInterceptor" />
-	<!-- <interceptors>
+	<interceptors>
 		 <interceptor>
 		 	<mapping path="/free/**" />
 		 	<beans:ref bean="sampleInterceptor"/>
@@ -56,5 +56,5 @@
 		 	<mapping path="/board/update.do"/>
 		 	<beans:ref bean="adminInterceptor"/>
 		 </interceptor>
-	</interceptors> -->
+	</interceptors>
 </beans:beans>
