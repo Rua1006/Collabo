@@ -35,26 +35,40 @@
     <jsp:include page="../include/header.jsp"></jsp:include>
 </header>
 <div class="container container-fluid">
-    <div class="card bg-transparent">
-        <img src="${path1 }/resources/img/ticket_left.png" class="card-img" alt="일반예매">
-        <div class="card-img-overlay">
-            <a class="text-white" href="${path1}/ticket/ticketInsert.do" role="button" >일반예매
-                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
-                    <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
-                </svg>
-            </a>
+    <main role="main" class="container">
+        <!-- 상단 티켓예매 안내 타이틀 -->
+        <div class="d-flex align-items-center p-3 my-3 bg-light rounded shadow-sm">
+            <div class="lh">
+                <span class="sub-title">일반티켓예매</span>
+            </div>
         </div>
-    </div>
-    <div class="card">
-        <img src="${path1 }/resources/img/ticket_right.png" class="card-img" alt="매직패스예매">
-        <div class="card-img-overlay">
-            <a class="text-white" href="${path1}/ticket/ticketOptionPass.do" role="button">매직패스예매
-                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
-                    <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
-                </svg>
-            </a>
-        </div>
-    </div>
+        <form name="frm1" id="frm1" action="${path1 }/ticket/insert.do" method="post">
+            <table id="table">
+                <tbody>
+                <tr>
+                    <th style="background-color:#dcdcdc">예매일자</th>
+                    <td>
+                        <input type="date" name="resdate" id="resdate" placeholder="날짜 선택"required style="width:700px; float:left;">
+                    </td>
+                </tr>
+                <tr>
+                    <th style="background-color:#dcdcdc">인원</th>
+                    <td>
+                        <div class="ten-human">
+                            <input type="text" name="personal" id="personal">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" class="submit success button" value="티켓 구매" >
+                        <input type="reset" class="reset button" value="취소" >
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </form>
+    </main>
 </div>
 </body>
 <footer id="footer" class="footer-nav row expanded collapse">

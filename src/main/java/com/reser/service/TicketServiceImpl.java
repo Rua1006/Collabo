@@ -14,12 +14,7 @@ public class TicketServiceImpl implements TicketService{
     TicketDAO ticketDao;
 
     @Override
-    public List<TicketDTO> ticketList() throws Exception {
-        return ticketDao.ticketList();
-    }
-
-    @Override
-    public void ticketInset(TicketDTO dto) throws Exception {
+    public void ticketInsert(TicketDTO dto) throws Exception {
         ticketDao.ticketInsert(dto);
     }
 }

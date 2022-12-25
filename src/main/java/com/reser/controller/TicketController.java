@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import javax.servlet.http.HttpServletRequest;
 
+
 @Controller
 @RequestMapping("/ticket/*")
 public class TicketController {
@@ -25,7 +26,6 @@ public class TicketController {
         return "ticket/ticketInfo";
     }
 
-
     //티켓 구매 옵션 (일반) 선택페이지
     @GetMapping("ticketOptionNomal.do")
     public String getOptionNomal(Model model) throws Exception {
@@ -38,12 +38,18 @@ public class TicketController {
         return "ticket/ticketOptionPass";
     }
 
-
-    @PostMapping("insertTicket.do")
-    public String insertTicket(HttpServletRequest request, Model model) throws Exception {
+    @GetMapping("ticketInsert.do")
+    public String getticketInsert(Model model) throws Exception {
+        return "ticket/ticketOptionNomal";
+    }
+    
+    //테스트 티켓 구매
+    @PostMapping("insert.do")
+    public String ticketInsert(HttpServletRequest request, Model model) throws Exception {
         TicketDTO dto = new TicketDTO();
-        dto.setTicketidSeq(Integer.parseInt(request.getParameter("ticketidseq")));
-        dto.setBuydate("");
+        dto.setResdate(request.getParameter("resdate"));
+        dto.setPersonal(Integer.parseInt(request.getParameter("personal")));
+        ticketService.ticketInsert(dto);
         return "redirect:/";
     }
 }

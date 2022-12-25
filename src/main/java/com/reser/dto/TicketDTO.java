@@ -4,8 +4,7 @@ import lombok.Data;
 
 @Data
 public class TicketDTO {
-    private int ticketidSeq;
-    private String name;
-    private int price;
-    private String buydate;
+    private int ticketSeq;
+    private String resdate;
+    private int personal;
 }

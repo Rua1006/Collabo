@@ -10,35 +10,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="599afe2d-96dd-45d3-8459-353ccabaf6ef" name="Changes" comment="login member">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reser/controller/ReservationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/reservationMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/colla.sql" beforeDir="false" afterPath="$PROJECT_DIR$/colla.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/reser/controller/ReservationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reser/controller/ReservationController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/reser/controller/TicketController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reser/controller/TicketController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/reser/dao/MemberDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reser/dao/MemberDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/reser/dao/TicketDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reser/dao/TicketDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/reser/dao/TicketDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reser/dao/TicketDAOImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/reser/dto/TicketDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reser/dto/TicketDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/ticketMapper.tld" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/ticketMapper.tld" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/include/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/include/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/include/calendar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/calendar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/include/datatables.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/datatables.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/include/datatables.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/datatables.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/include/datepicker.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/datepicker.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/include/datepicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/datepicker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/include/datepicker.ko.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/datepicker.ko.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/include/datepicker.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/datepicker.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/include/datepicker.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/datepicker.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/include/foundation.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/foundation.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/include/foundation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/foundation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/include/foundation.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/foundation.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/include/foundation.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/foundation.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/include/head.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/include/head.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/include/jquery-3.1.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/jquery-3.1.1.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/include/jquery-latest.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/jquery-latest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/include/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/include/normalize.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/normalize.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/include/what-input.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/what-input.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/ticket/ticketOptionNomal.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/ticket/ticketOptionPass.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/reser/service/TicketService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reser/service/TicketService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/reser/service/TicketServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reser/service/TicketServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/ticketMapper.tld" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/ticketMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/include/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/include/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/ticket/ticketInfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/ticket/ticketInfo.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +39,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="origin/병수" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -98,7 +87,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/KBS/taglibs-standard-jstlel-1.2.5.jar",
+    "last_opened_file_path": "C:/KBS/collabo/reser",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -229,6 +218,8 @@
       <workItem from="1671721379190" duration="2878000" />
       <workItem from="1671805586509" duration="2925000" />
       <workItem from="1671877491911" duration="14881000" />
+      <workItem from="1671948551902" duration="16376000" />
+      <workItem from="1671968533395" duration="987000" />
     </task>
     <servers />
   </component>
@@ -255,7 +246,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/지은" />
+                        <option value="origin/master" />
                       </list>
                     </value>
                   </entry>

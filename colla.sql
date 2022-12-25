@@ -30,9 +30,25 @@ create table ticket (
 -- 티켓 아이디 자동증가
 create sequence ticket_sq;
 
+
+
+-- 테스트 티켓 예매
+create table test_ticket(
+     id number(19) primary key,
+     resdate date,
+     personal int
+    );
+    select * from test_ticket;
+
+drop table test_ticket;
+
+
+
 insert into ticket values (ticket_sq.nextval,'일반',1000);
 desc ticket;
 select * from ticket;
+
+
 
 -- 티켓 테이블(패스트트랙예매)
 create table ticket2 (
@@ -76,6 +92,9 @@ create table attraction (
 desc attraction;
 create sequence attr_sq;
 
+insert into attraction values(attr_sq.nextval, '샘플');
+select*from attraction;
+
 
 -- 놀이기구 사용시간 테이블
 create table attrtime (
@@ -88,5 +107,8 @@ create table attrtime (
 desc attrtime;
 create sequence time_sq;
 
+insert into attrtime values(time_sq.nextval, '09:00-10:00', '40', 1);
 
+
+--테스트중
 commit;
