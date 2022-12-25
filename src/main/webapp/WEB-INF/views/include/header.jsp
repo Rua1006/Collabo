@@ -18,7 +18,7 @@
        <li>
       	<a href="#">예약 테스트</a>
       	<ul class="menu">
-      	<li><a href="#">예약</a></li>
+      	<li><a href="${path1}/reservation/reservation.do">예약</a></li>
       	<li><a href="${path1}/ticket/ticketInfo.do">티켓구매</a></li>
  		</ul>
       </li>

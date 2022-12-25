@@ -15,23 +15,23 @@
 	<!-- WARN : 처리는 가능하지만 경고성 메시지 발신시 -->
 	<!-- INFO : 정보성 메시지 -->
 	<!-- Application Loggers -->
-	<logger name="com.hami.myapp">
+	<logger name="com.resr.myapp">
 		<level value="info" />
 	</logger>
 	
-	<logger name="com.hami.controller">
+	<logger name="com.reser.controller">
 		<level value="info" />
 	</logger>
 	
-	<logger name="com.hami.dao">
+	<logger name="com.reser.dao">
 		<level value="info" />
 	</logger>
 	
-	<logger name="com.hami.dto">
+	<logger name="com.reser.dto">
 		<level value="info" />
 	</logger>
 	
-	<logger name="com.hami.service">
+	<logger name="com.reser.service">
 		<level value="info" />
 	</logger>
 	
