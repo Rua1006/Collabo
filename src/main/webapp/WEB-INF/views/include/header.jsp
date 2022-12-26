@@ -28,7 +28,7 @@
 				<li><a href="${path1 }/board/list.do">공지사항</a></li>
 				<li><a href="#">자료실</a></li>
 				<li><a href="#">질문 및 답변</a></li>
-				<li><a href="${path1 }/free/list.do">자유게시판</a></li>
+				<li><a href="${path1 }/review/list.do">이용후기</a></li>
 			</ul>
     	</li>
      </ul>

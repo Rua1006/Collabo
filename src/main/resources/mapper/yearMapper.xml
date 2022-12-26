@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="year">
+	<!-- 목록 -->
+	<select id="yearList" resultType="com.reser.dto.YearDTO">
+		select * from yearDis
+	</select>
+	<!-- 상세보기 -->
+	<select id="yearDetail" resultType="com.reser.dto.YearDTO">
+		select * from yearDis where no=#{no}
+	</select>
+	<!-- 등록-->
+	<insert id="yearInsert">
+		insert into yearDis values(yseq.nextval, #{title}, #{ydisA}, #{ydisB}, #{ydisC}, #{ydisD},#{ydisE},#{period},#{target},#{caution})
+	</insert>
+	<!-- 삭제 -->
+	<delete id="yearDelete">
+		delete from yearDis where no=#{no}
+	</delete>
+	<!-- 수정 -->
+	<update id="yearEdit">
+		update yearDis set title=#{title}, ydisA=#{ydisA}, ydisB=#{ydisB}, ydisC=#{ydisC}, ydisD=#{ydisD}, ydisE=#{ydisE}, #{period}, #{target}, #{caution} where no=#{no}
+	</update>
+
+</mapper>

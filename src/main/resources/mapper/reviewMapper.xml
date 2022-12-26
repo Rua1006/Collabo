@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="review">
+	<!-- 공지사항 목록 -->
+	<select id="reviewList" resultType="com.reser.dto.ReviewDTO">
+		select * from review order by regdate desc
+	</select>
+	<!-- 글 상세보기 -->
+	<select id="reviewDetail" resultType="com.reser.dto.ReviewDTO">
+		select * from review where rno=#{rno}
+	</select>
+	<!-- 글 수 카운트 -->
+	<select id="totalCount" resultType="integer" >
+		select count(*) from review
+	</select>
+	<!-- 글 등록 -->
+	<insert id="reviewInsert">
+		insert into review values (rseq.nextval, #{title}, #{content}, sysdate, 0, #{id}, 0)
+	</insert>
+	<!-- 글 삭제 -->
+	<delete id="reviewDelete">
+		delete from review where rno=#{rno}
+	</delete>
+	<!-- 글  수정 -->
+	<update id="reviewEdit">
+		update review set title=#{title}, content=#{content} where rno=#{rno}
+	</update>
+	<!-- 글 조회수 추가 -->
+	<update id="visitCount">
+		update review set visited=visited+1 where rno=#{rno}
+	</update>
+</mapper>

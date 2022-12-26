@@ -25,7 +25,6 @@
 		    <tr>
 		      <th>NO</th>
 		      <th>Title</th>
-		      <th>Content</th>
 		      <th>REGDATE</th>
 		      <th>Visited</th>
 		    </tr>
@@ -35,7 +34,6 @@
 			<tr>
 				<td>${status.count }</td>
 				<td><a href="${path1 }/board/detail.do?bno=${board.bno }">${board.title }</a></td>
-				<td>${board.content }</td>
 				<td>
 					<fmt:parseDate value="${board.regdate }" var="resdate" pattern="yyyy-MM-dd HH:mm:ss" />
 	      			<fmt:formatDate value="${resdate }" pattern="yyyy-MM-dd" />

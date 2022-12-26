@@ -100,3 +100,34 @@ insert into board_tb values(bseq.nextval, '공지사항 테스트 제목1', '공
 
 commit;
 
+
+-- 파일 첨부가 가능한 이용후기 게시판
+create table review(rno int primary key,  
+title varchar2(100) not null,  
+content varchar2(1500) not null,   
+regdate date,  
+visited int,   
+id varchar2(20),   
+rec int
+);
+
+create sequence rseq start with 1;
+
+--연간이용권 할인정보
+create table yearDis (
+    no number primary key,
+    title varchar2(50),
+    ydisA varchar2(10),
+    ydisB varchar2(10),
+    ydisC varchar2(10),
+    ydisD varchar2(10),
+    ydisE varchar2(10),
+    period varchar2(50),
+    target varchar2(50),
+    caution varchar2(200)
+);
+drop table yearDis;
+create SEQUENCE yseq;
+insert into yearDis values (yseq.nextval, '더미 데이터', '200000', '150000', '120000', '100000', '110000', '2022-12-01 ~ 2022-12-31', '더미 타겟', '유의사항!');
+select * from yeardis;
+commit;
