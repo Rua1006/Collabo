@@ -59,4 +59,41 @@ ul { list-style:none; }
 	width:25%; height:25%;
 }
 
+.wrap { width: 100%; clear:both; }
+.container {display:block; clear:both;}
+.top {text-align: center;}
+.notiDiv {display:block; margin: 100px; padding: 100px;background-color: rgb(239, 239, 239);}
+.tit {font-size :40px; font-weight: 700;}
+.dotTit {font-size: 28px;}
+.barList {font-size : 20px;}
+.buttonDiv {text-align: center; margin: 50px 0;}
+
+    .thumb_lst { width:100%; float:left; margin-bottom: -10px; }
+    .thumb_lst li { clear:both; border:3px solid #ececec; height: 350px;}
+    .thumb_lst li:first-child { border-top:3px solid #ececec; }
+    .thumb_lst li a { display:block; }
+    .thumb_lst li .img_fr { width: 300px; height: 400px; overflow:hidden; float:left; }
+    .thumb_lst li .img_fr img { display:block; width: 100%; height:auto; margin-top:25px; }
+    .thumb_lst li .com_fr { padding-left: 30px; float:left; color:#333; margin-top:50px; }
+    .thumb_tit { font-weight: 700; font-size: 20px ;line-height: 2.4; text-overflow: ellipsis; overflow: hidden; white-space:nowrap; }
+    .thumb_com { font-weight: 500; line-height:2; text-overflow: ellipsis; overflow: hidden; white-space:nowrap; }
+    .thumb_price { line-height: 1.8; text-overflow: ellipsis; overflow: hidden; white-space:nowrap; }
+    
+    .bene_lst { width:50%; float:left; margin-bottom: 50px; }
+    .bene_lst li { clear:both; border:3px solid #ececec; height: 150px;}
+    .bene_lst li:first-child { border-top:3px solid #ececec; }
+    .bene_lst li a { display:block; }
+    .bene_lst li .img_fr { width: 150px; height: 150px; overflow:hidden; float:left; }
+    .bene_lst li .img_fr img { display:block; width: 100%; height:auto; 
+    margin-top:-28px; }
+    .bene_lst li .com_fr { padding-left: 30px; float:left; color:#333; }
+    .bene_tit { line-height: 2; text-overflow: ellipsis; overflow: hidden; white-space:nowrap; }
+    .bene_com { line-height:2; text-overflow: ellipsis; overflow: hidden; white-space:nowrap; }
+    .bene_price { line-height: 1; text-overflow: ellipsis; overflow: hidden; white-space:nowrap; }
+
+    .roundDiv {margin-top: 40px; margin-bottom: 100px !important; padding-bottom: 100px; border-bottom: 1px dashed #e1e1e1;}
+    .roundDiv li {margin-top: 10px; display: table; width: 100%;}
+    .roundDiv li p {display: table-cell; vertical-align: middle; font-size: 18px; line-height: 25px; padding-left: 20px;}
+    .roundDiv li p:first-child {width: 118px; padding: 10px 0; text-align: center; font-size: 18px; color: #000; border: 1px solid #e1e1e1;
+    	border-radius: 25px;padding-left: 0;}
 </style>

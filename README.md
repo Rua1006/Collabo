@@ -84,6 +84,15 @@ TeamProject + Reservation system + Spring legacy Maven MVC project + Oracle
   regdate<br>
   visited
 
+- Review :<br>
+  *rno(pk)<br>
+  title<br>
+  content<br>
+  regdate<br>
+  visited<br>
+  id<br>
+  rec
+
 
 ## 🕹 구현 기능
 - 회원(CRUD)(2022-12-20)<br>
@@ -105,6 +114,13 @@ TeamProject + Reservation system + Spring legacy Maven MVC project + Oracle
   삭제
 
 - 공지사항(CRUD)(2022-12-25)<br>
+  등록<br>
+  목록불러오기<br>
+  상세내용불러오기<br>
+  수정<br>
+  삭제
+
+- 이용후기(CRUD)[업데이트 중]<br>
   등록<br>
   목록불러오기<br>
   상세내용불러오기<br>

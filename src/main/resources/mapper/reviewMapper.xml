@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="review">
-	<!-- 공지사항 목록 -->
+	<!-- 이용후기 목록 -->
 	<select id="reviewList" resultType="com.reser.dto.ReviewDTO">
 		select * from review order by regdate desc
 	</select>
@@ -15,7 +15,7 @@
 	</select>
 	<!-- 글 등록 -->
 	<insert id="reviewInsert">
-		insert into review values (rseq.nextval, #{title}, #{content}, sysdate, 0, #{id}, 0)
+		insert into review(rno, title, content,regdate, visited, rec) values (rseq.nextval, #{title}, #{content}, sysdate, 0, 0)
 	</insert>
 	<!-- 글 삭제 -->
 	<delete id="reviewDelete">

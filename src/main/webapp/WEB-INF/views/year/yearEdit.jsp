@@ -2,9 +2,8 @@
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"  %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
-<%@ page import="java.util.*, java.lang.*" %>
-<%@ page import="java.text.*, java.net.InetAddress" %>
-<c:set var="path1" value="${request.getContextPath() }" />
+<%@ taglib prefix="fn" uri = "http://java.sun.com/jsp/jstl/functions"%>
+<c:set var="path1" value="${pageContext.request.contextPath }"/>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -12,9 +11,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ticket Infomation_yearInfo</title>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-latest.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="${path1 }/include/foundation.css">
+<link rel="stylesheet" href="${path1 }/include/app.css">
+    <!-- 헤드 부분 인클루드 -->
+    <jsp:include page="../include/head.jsp"></jsp:include>
     <style>
     * { margin: 0; padding: 0; }
 	body, html { width:100%; }
@@ -39,6 +39,10 @@
     </style>
 </head>
 <body>
+<header id="header">
+    <!-- 헤더 부분 인클루드 -->
+    <jsp:include page="../include/header.jsp"></jsp:include>
+</header>
 <div class="content">
     <div class="container">
       <h1 class="title">글 수정하기</h1>
@@ -95,8 +99,13 @@
 		</form>
     </div>
 </div>
-<footer>
-
+<script src="${path1 }/include/jquery.js"></script>
+<script src="${path1 }/include/what-input.js"></script>
+<script src="${path1 }/include/foundation.js"></script>
+<script src="${path1 }/include/app.js"></script>
+<footer id="footer" class="footer-nav row expanded collapse">
+    <!-- 푸터 부분 인클루드 -->
+    <jsp:include page="../include/footer.jsp"></jsp:include>
 </footer>
 </body>
 </html>

@@ -21,7 +21,7 @@ public class BoardController {
 	@Autowired
 	private BoardService boardService;
 	
-	//°øÁö»çÇ× ¸ñ·Ï
+	//ê³µì§€ì‚¬í•­ ëª©ë¡
 	@GetMapping("list.do")		
 	public String getBoardList(Model model) throws Exception {
 		List<BoardDTO> boardList = boardService.boardList(); 
@@ -29,7 +29,7 @@ public class BoardController {
 		return "board/boardList";
 	}
 	
-	//°øÁö»çÇ× »ó¼¼º¸±â
+	//ê³µì§€ì‚¬í•­ ìƒì„¸ë³´ê¸°
 	@GetMapping("detail.do")	
 	public String getBoardDetail(HttpServletRequest request, Model model) throws Exception {
 		int bno = Integer.parseInt(request.getParameter("bno"));
@@ -38,7 +38,7 @@ public class BoardController {
 		return "board/boardDetail";
 	}
 	
-	//°øÁö»çÇ× µî·Ï
+	//ê³µì§€ì‚¬í•­ ë“±ë¡
 	@GetMapping("insert.do")
 	public String insertForm(HttpServletRequest request, Model model) throws Exception {
 		return "board/boardInsert";
@@ -54,7 +54,7 @@ public class BoardController {
 		return "redirect:list.do";
 	}
 	
-	//°øÁö»çÇ× »èÁ¦
+	//ê³µì§€ì‚¬í•­ ì‚­ì œ
 	@GetMapping("delete.do")
 	public String boardDelete(HttpServletRequest request, Model model) throws Exception {
 		int bno = Integer.parseInt(request.getParameter("bno"));
@@ -63,7 +63,7 @@ public class BoardController {
 		return "redirect:list.do";
 	}
 	
-	//°øÁö»çÇ× ¼öÁ¤
+	//ê³µì§€ì‚¬í•­ ìˆ˜ì •
 	@GetMapping("edit.do")
 	public String editForm(HttpServletRequest request, Model model) throws Exception {
 		int bno = Integer.parseInt(request.getParameter("bno"));

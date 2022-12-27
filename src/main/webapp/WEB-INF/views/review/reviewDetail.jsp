@@ -8,7 +8,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>공지사항 상세보기</title>
+<title>이용후기 보기</title>
 <link rel="stylesheet" href="${path1 }/include/foundation.css">
 <link rel="stylesheet" href="${path1 }/include/app.css">
     <!-- 헤드 부분 인클루드 -->
@@ -21,7 +21,7 @@
 </header>
 <div class="content" id="content">
     <div class="row column text-center">
-      <h2 class="h1">이요후기 보기</h2>
+      <h2 class="h1">이용후기 보기</h2>
       <hr>
       <div class="container">
 	      <table id="table1">

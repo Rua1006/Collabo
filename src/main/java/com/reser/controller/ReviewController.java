@@ -79,7 +79,7 @@ public class ReviewController {
 		int rno = Integer.parseInt(request.getParameter("rno"));
 		ReviewDTO dto = reviewService.reviewDetail(rno);
 		model.addAttribute("dto", dto);
-		return "review/reviewEdit";
+		return "review/reivewEdit";
 	}
 	
 	@PostMapping("edit.do")
@@ -115,7 +115,7 @@ public class ReviewController {
     		byte[] bytes = upload.getBytes();
     		
     		//이미지 경로 생성
-    		String path = "E:\\Collabo\\Collabo\\src\\main\\webapp\\resources\\upload" + "ckImage/";	// 이미지 경로 설정(폴더 자동 생성)
+    		String path = "D:\\kje\\collabo\\com.reser\\src\\main\\webapp\\resources\\upload" + "ckImage/";	// 이미지 경로 설정(폴더 자동 생성)
     		String ckUploadPath = path + uid + "_" + fileName;
     		File folder = new File(path);
     		System.out.println("path:"+path);	// 이미지 저장경로 console에 확인
@@ -159,12 +159,12 @@ public class ReviewController {
     throws ServletException, IOException{
     	
     	//서버에 저장된 이미지 경로
-    	String path = "E:\\Collabo\\Collabo\\src\\main\\webapp\\resources\\upload" + "ckImage/";	// 저장된 이미지 경로
+    	String path = "D:\\kje\\collabo\\com.reser\\src\\main\\webapp\\resources\\upload" + "ckImage/";	// 저장된 이미지 경로
     	System.out.println("path:"+path);
     	String sDirPath = path + uid + "_" + fileName;
     	
     	File imgFile = new File(sDirPath);
-    	
+    	System.out.println(imgFile.getName());
     	//사진 이미지 찾지 못하는 경우 예외처리로 빈 이미지 파일을 설정한다.
     	if(imgFile.isFile()){
     		byte[] buf = new byte[1024];

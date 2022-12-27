@@ -2,10 +2,8 @@
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"  %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
-<%@ page import="java.util.*, java.lang.*" %>
-<%@ page import="java.text.*, java.net.InetAddress" %>
-<c:set var="path1" value="${request.getContextPath() }" />
-<c:set var="path2" value="${pageContext.request.contextPath }" />
+<%@ taglib prefix="fn" uri = "http://java.sun.com/jsp/jstl/functions"%>
+<c:set var="path1" value="${pageContext.request.contextPath }"/>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -13,33 +11,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ticket Infomation_yearInfo</title>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-latest.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="${path1 }/include/foundation.css">
+<link rel="stylesheet" href="${path1 }/include/app.css">
+    <!-- 헤드 부분 인클루드 -->
+    <jsp:include page="../include/head.jsp"></jsp:include>
     <style>
-    * { margin: 0; padding: 0; }
-	body, html { width:100%; }
-	ul { list-style:none; }
-	a { text-decoration: none; }
-	button, input { outline:0; background-color: #333; color:#fff; }
-	.wrap { width: 100%; clear:both; }
-    .container {display:block; clear:both;}
-    .page { clear:both; width: 100%; min-height:100vh;}
-    .page:after { content:""; display:block; clear:both; }
-    .page_wrap { width: 1200px; margin: 0 auto; }
-    .content { display:none; }
-    .content:target { display:block; }
-    h1 {text-align: center;}
-    .sub_tit {text-align: center;}
-    table {font-size: 24px; font-weight: 500;}
-    .notiDiv {display:block; margin: 100px; padding: 100px;background-color: rgb(239, 239, 239);}
-    .tit {font-size :40px; font-weight: 700;}
-    .dotTit {font-size: 28px;}
-    .barList {font-size : 20px; line-height: 2.5em;}
-    .buttonDiv {text-align: center; margin: 50px 0;}
     </style>
 </head>
 <body>
+<header id="header">
+    <!-- 헤더 부분 인클루드 -->
+    <jsp:include page="../include/header.jsp"></jsp:include>
+</header>
 <div class="content" id="page2">
 <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
@@ -73,10 +56,10 @@
 						</tr>
 					</thead>
 					<tbody>
-					<c:forEach items="${list }" var="dto" varStatus="status">
+					<c:forEach items="${yearList }" var="dto" varStatus="status">
 						<tr>
 							<th scope="row">${status.count }</th>
-							<td><a href="${path1 }/GetYearCtrl.do?no=${dto.no }">${dto.title }</a></td>
+							<td><a href="${path1 }/year/detail.do?no=${dto.no }">${dto.title }</a></td>
 							<td>${dto.period }</td>
 						</tr>
 					</c:forEach>
@@ -89,15 +72,20 @@
 				</table>
 				<div class="buttons">
 				  <!--	<c:if test='${sid.equals("admin") }'>	-->
-				  	<a href="${path1 }/year/yearInsert.jsp" class="button is-success">글 등록</a>
+				  	<a href="${path1 }/year/insert.do" class="button is-success">글 등록</a>
 				  <!--	</c:if>	-->
 				</div>
 			</div>
 		</div>
 	</section>
 </div>
-<footer>
-
+<script src="${path1 }/include/jquery.js"></script>
+<script src="${path1 }/include/what-input.js"></script>
+<script src="${path1 }/include/foundation.js"></script>
+<script src="${path1 }/include/app.js"></script>
+<footer id="footer" class="footer-nav row expanded collapse">
+    <!-- 푸터 부분 인클루드 -->
+    <jsp:include page="../include/footer.jsp"></jsp:include>
 </footer>
 </body>
 </html>

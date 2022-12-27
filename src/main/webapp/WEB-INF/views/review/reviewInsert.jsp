@@ -22,7 +22,7 @@
 </header>
 <div class="content" id="con">
 	    <div class="row column text-center">
-	      <h2 class="h1">자유게시판 글쓰기</h2>
+	      <h2 class="h1">이용후기 등록하기</h2>
 	      <hr>
 	      <div class="container">
 	      	<form action="${path1 }/review/insert.do" method="post">
@@ -38,7 +38,7 @@
 			      		<tr>
 			      			<th style="background-color:#dcdcdc">작성자</th>
 			      			<td>
-			      				<input type="text" name="id" id="id"  maxlength="98" required>
+			      				<input type="text" name="id" id="id" value="${sid }" />
 			      			</td>
 			      		</tr>
 			      		<tr>

@@ -2,10 +2,8 @@
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"  %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
-<%@ page import="java.util.*, java.lang.*" %>
-<%@ page import="java.text.*, java.net.InetAddress" %>
-<c:set var="path1" value="${request.getContextPath() }" />
-<c:set var="path2" value="${pageContext.request.contextPath }" />
+<%@ taglib prefix="fn" uri = "http://java.sun.com/jsp/jstl/functions"%>
+<c:set var="path1" value="${pageContext.request.contextPath }"/>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -13,17 +11,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ticket Infomation_yearInfo</title>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-latest.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="${path1 }/include/foundation.css">
+<link rel="stylesheet" href="${path1 }/include/app.css">
+    <!-- 헤드 부분 인클루드 -->
+    <jsp:include page="../include/head.jsp"></jsp:include>
     <style>
     * { margin: 0; padding: 0; }
 	body, html { width:100%; }
 	ul { list-style:none; }
 	a { text-decoration: none; }
 	button, input { outline:0; background-color: #333; color:#fff; }
-	.wrap { width: 100%; clear:both; }
-    .container {display:block; clear:both;}
     .page { clear:both; width: 100%; min-height:100vh;}
     .page:after { content:""; display:block; clear:both; }
     .page_wrap { width: 1200px; margin: 0 auto; }
@@ -32,41 +29,18 @@
     h1 {text-align: center;}
     .sub_tit {text-align: center;}
     table {font-size: 24px; font-weight: 500;}
-    .notiDiv {display:block; margin: 100px; padding: 100px;background-color: rgb(239, 239, 239);}
-    .tit {font-size :40px; font-weight: 700;}
-    .dotTit {font-size: 28px;}
-    .barList {font-size : 20px; line-height: 2.5em;}
-    .buttonDiv {text-align: center; margin: 50px 0;}
-    
-    .thumb_lst { width:100%; float:left; margin-bottom: -10px; }
-    .thumb_lst li { clear:both; border:3px solid #ececec; height: 350px;}
-    .thumb_lst li:first-child { border-top:3px solid #ececec; }
-    .thumb_lst li a { display:block; }
-    .thumb_lst li .img_fr { width: 300px; height: 400px; overflow:hidden; float:left; }
-    .thumb_lst li .img_fr img { display:block; width: 100%; height:auto; margin-top:25px; }
-    .thumb_lst li .com_fr { padding-left: 30px; float:left; color:#333; margin-top:50px; }
-    .thumb_tit { font-weight: 700; font-size: 20px ;line-height: 2.4; text-overflow: ellipsis; overflow: hidden; white-space:nowrap; }
-    .thumb_com { font-weight: 500; line-height:2; text-overflow: ellipsis; overflow: hidden; white-space:nowrap; }
-    .thumb_price { line-height: 1.8; text-overflow: ellipsis; overflow: hidden; white-space:nowrap; }
-    
-    .bene_lst { width:50%; float:left; margin-bottom: 50px; }
-    .bene_lst li { clear:both; border:3px solid #ececec; height: 150px;}
-    .bene_lst li:first-child { border-top:3px solid #ececec; }
-    .bene_lst li a { display:block; }
-    .bene_lst li .img_fr { width: 150px; height: 150px; overflow:hidden; float:left; }
-    .bene_lst li .img_fr img { display:block; width: 100%; height:auto; 
-    margin-top:-28px; }
-    .bene_lst li .com_fr { padding-left: 30px; float:left; color:#333; }
-    .bene_tit { line-height: 2; text-overflow: ellipsis; overflow: hidden; white-space:nowrap; }
-    .bene_com { line-height:2; text-overflow: ellipsis; overflow: hidden; white-space:nowrap; }
-    .bene_price { line-height: 1; text-overflow: ellipsis; overflow: hidden; white-space:nowrap; }
+
     </style>
 </head>
 <body>
+<header id="header">
+    <!-- 헤더 부분 인클루드 -->
+    <jsp:include page="../include/header.jsp"></jsp:include>
+</header>
 <div class="content" id="page1">
 <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="${path2 }/">Home</a></li>
+        <li class="breadcrumb-item"><a href="${path1 }/">Home</a></li>
         <li class="breadcrumb-item"><a href="#">이용요금 안내</a></li>
         <li class="breadcrumb-item active" aria-current="page">연간이용권</li>
     </ol>
@@ -77,7 +51,7 @@
 	    <input value="yearInfo.jsp#page1" type="radio" name="options" id="option1" class="sel" checked> 권종별 기본가격
 	  </label>
 	  <label class="btn btn-secondary">
-	    <input value="${path2 }/GetYearListCtrl.do" type="radio" name="options" id="option2" class="sel"> 할인정보
+	    <input value="${path1 }/GetYearListCtrl.do" type="radio" name="options" id="option2" class="sel"> 할인정보
 	  </label>
 	  <label class="btn btn-secondary">
 	    <input value="yearInfo.jsp#page3" type="radio" name="options" id="option3" class="sel"> 특별혜택
@@ -89,7 +63,7 @@
 			<h2 class="sub_tit">연간이용권을 가입해 유효기간 동안 자유롭게 이용하며 특별한 혜택을 누려보세요!</h2>
 			    <ul class="thumb_lst">
 					<li>
-						<div class="img_fr"><img src="${path2 }/data/yearRed.png" alt="레드권 이미지"></div>
+						<div class="img_fr"><img src="${path1 }/data/yearRed.png" alt="레드권 이미지"></div>
 						<div class="com_fr">
 							<h3 class="thumb_tit">레드권</h3>
 							<p class="thumb_com"><strong>전대상 --------- 300,000원</strong></p>
@@ -99,7 +73,7 @@
 						</div>
 					</li>
 					<li>
-						<div class="img_fr"><img src="${path2 }/data/yearBlue.png" alt="블루권 이미지"></div>
+						<div class="img_fr"><img src="${path1 }/data/yearBlue.png" alt="블루권 이미지"></div>
 						<div class="com_fr">
 							<h3 class="thumb_tit">블루권</h3>
 							<p class="thumb_com">
@@ -128,7 +102,7 @@
 <div class="content" id="page3">
 <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="${path2 }/">Home</a></li>
+        <li class="breadcrumb-item"><a href="${path1 }/">Home</a></li>
         <li class="breadcrumb-item"><a href="#">이용요금 안내</a></li>
         <li class="breadcrumb-item active" aria-current="page">연간이용권</li>
     </ol>
@@ -139,7 +113,7 @@
 	    <input value="yearInfo.jsp#page1" type="radio" name="options" id="option1" class="sel"> 권종별 기본가격
 	  </label>
 	  <label class="btn btn-secondary">
-	    <input value="${path2 }/GetYearListCtrl.do" type="radio" name="options" id="option2" class="sel"> 할인정보
+	    <input value="${path1 }/GetYearListCtrl.do" type="radio" name="options" id="option2" class="sel"> 할인정보
 	  </label>
 	  <label class="btn btn-secondary active">
 	    <input value="yearInfo.jsp#page3" type="radio" name="options" id="option3" class="sel" checked> 특별혜택
@@ -235,8 +209,13 @@ for(var i=0;i<sel.length;i++){
     });
 }
 </script>
-<footer>
-
+<script src="${path1 }/include/jquery.js"></script>
+<script src="${path1 }/include/what-input.js"></script>
+<script src="${path1 }/include/foundation.js"></script>
+<script src="${path1 }/include/app.js"></script>
+<footer id="footer" class="footer-nav row expanded collapse">
+    <!-- 푸터 부분 인클루드 -->
+    <jsp:include page="../include/footer.jsp"></jsp:include>
 </footer>
 </body>
 </html>

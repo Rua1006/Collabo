@@ -2,10 +2,8 @@
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"  %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
-<%@ page import="java.util.*, java.lang.*" %>
-<%@ page import="java.text.*, java.net.InetAddress" %>
-<c:set var="path1" value="${request.getContextPath() }" />
-<c:set var="path2" value="${pageContext.request.contextPath }" />
+<%@ taglib prefix="fn" uri = "http://java.sun.com/jsp/jstl/functions"%>
+<c:set var="path1" value="${pageContext.request.contextPath }"/>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -13,9 +11,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ticket Infomation_tichetInfo</title>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-latest.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="${path1 }/include/foundation.css">
+	<link rel="stylesheet" href="${path1 }/include/app.css">
+    <!-- 헤드 부분 인클루드 -->
+    <jsp:include page="../include/head.jsp"></jsp:include>
     <style>
     * { margin: 0; padding: 0; }
 	body, html { width:100%; }
@@ -34,9 +33,13 @@
     </style>
 </head>
 <body>
+<header id="header">
+    <!-- 헤더 부분 인클루드 -->
+    <jsp:include page="../include/header.jsp"></jsp:include>
+</header>
 <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="${path2 }/">Home</a></li>
+        <li class="breadcrumb-item"><a href="${path1 }/">Home</a></li>
         <li class="breadcrumb-item"><a href="#">이용요금 안내</a></li>
         <li class="breadcrumb-item active" aria-current="page">티켓요금</li>
     </ol>
@@ -76,12 +79,17 @@
             5) 만 65세 이상 : 어린이 요금 적용</p>
     </div>
     <div class="buttonDiv">
-        <a href="${path2 }/charge/fastInfo.jsp" type="button" class="btn btn-outline-info btn-lg">패스트트랙 요금 보기</a>
+        <a href="${path1 }/charge/fastInfo.jsp" type="button" class="btn btn-outline-info btn-lg">패스트트랙 요금 보기</a>
         <a href="" type="button" class="btn btn-info btn-lg">티켓 예매</a>
     </div>
 </div>
-<footer>
-
+<script src="${path1 }/include/jquery.js"></script>
+<script src="${path1 }/include/what-input.js"></script>
+<script src="${path1 }/include/foundation.js"></script>
+<script src="${path1 }/include/app.js"></script>
+<footer id="footer" class="footer-nav row expanded collapse">
+    <!-- 푸터 부분 인클루드 -->
+    <jsp:include page="../include/footer.jsp"></jsp:include>
 </footer>
 </body>
 </html>

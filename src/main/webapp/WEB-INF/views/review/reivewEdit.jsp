@@ -13,6 +13,7 @@
 <link rel="stylesheet" href="${path1 }/include/app.css">
     <!-- 헤드 부분 인클루드 -->
     <jsp:include page="../include/head.jsp"></jsp:include>
+    <script type="text/javascript" src="${path1 }/resources/ckeditor/ckeditor.js"></script>
 </head>
 <body>
 <header id="header">
@@ -30,7 +31,7 @@
 			      		<tr>
 			      			<th style="background-color:#dcdcdc">글 제목</th>
 			      			<td>
-			      				<input type="hidden" name="seq" id="seq" value="${dto.rno }" >
+			      				<input type="hidden" name="seq" id="rno" value="${dto.rno }" >
 			      				<input type="text" name="title" id="title" placeholder="제목 입력" value="${dto.title }" maxlength="98" required>
 			      			</td>
 			      		</tr>
