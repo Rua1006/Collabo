@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="qna">
+	<!-- 목록 -->
+	<select id="qnaList" resultType="com.reser.dto.QnaDTO">
+		select * from re_qna order by parno desc, qno asc, lev asc
+	</select>
+	<!-- 글 상세보기 -->
+	<select id="getQna" resultType="com.reser.dto.QnaDTO">
+		select * from re_qna where qno=#{qno}
+	</select>
+	<!--  -->
+	<select id="selectUp" resultType="com.reser.dto.QnaDTO">
+		select no from re_qna order by regdate desc limit 1
+	</select>
+	<!-- 글등록-->
+	<insert id="qnaInsert">
+		insert into re_qna(title, content, author, lev, sec) values(qna_rseq.nextval, #{title}, #{content}, #{author}, #{lev}, #{sec})
+	</insert>
+	<!-- 답변 등록-->
+	<insert id="replyInsert">
+		insert into re_qna(title, content, author, lev, sec) values(qna_rseq.nextval, #{title}, #{content}, #{author}, #{lev}, #{sec})
+	</insert>
+	<!-- 삭제 -->
+	<delete id="qnaDelete">
+		delete from re_qna where qno=#{qno}
+	</delete>
+	<!-- 수정 -->
+	<update id="boardEdit">
+		update re_qna set title=#{title}, content=#{content}, author=#{author}, sec=#{sec}, lev=#{lev} where qno=#{qno}
+	</update>
+	<!-- 조회수 -->
+	<update id="countUp">
+		update re_qna set visited=visited+1 where qno=#{qno}
+	</update>
+	<!--  -->
+	<update id="insertUpdate">
+		update re_qna set parno=qno where lev=0 AND qno=#{qno}
+	</update>
+</mapper>

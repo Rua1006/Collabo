@@ -24,8 +24,7 @@
 	<resources mapping="/free/**" location="/WEB-INF/views/free" />
 	<resources mapping="/company/**" location="/WEB-INF/views/company" />
 	<resources mapping="/review/**" location="/WEB-INF/views/review" />
-	<resources mapping="/year/**" location="/WEB-INF/views/year" />
-	<resources mapping="/charge/**" location="/WEB-INF/views/charge" />
+
 
 
 	<beans:bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">

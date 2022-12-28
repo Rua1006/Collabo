@@ -15,15 +15,6 @@
       	<img class="header_img" src="${path1 }/resources/img/logo_test.png" alt="테스트" style="height: 20px;">
       </a>
        <li class="menu-text"><a href="/" class="logo">테스트</a></li>
-       <li class="has-submenu">
-			<a href="#">이용권 안내</a>
-			<ul class="submenu menu vertical" data-submenu>
-				<li><a href="#">티켓 안내</a></li>
-				<li><a href="#">패스트 트랙 안내</a></li>
-				<li><a href="#">연간이용권 안내</a></li>
-				<li><a href="${path1 }/year/list.do">이용권 할인 안내</a></li>
-			</ul>
-    	</li>
        <li>
       	<a href="#">예약 테스트</a>
       	<ul class="menu">
@@ -36,7 +27,7 @@
 			<ul class="submenu menu vertical" data-submenu>
 				<li><a href="${path1 }/board/list.do">공지사항</a></li>
 				<li><a href="#">자료실</a></li>
-				<li><a href="#">질문 및 답변</a></li>
+				<li><a href="${path1 }/qna/list.do">질문 및 답변</a></li>
 				<li><a href="${path1 }/review/list.do">이용후기</a></li>
 			</ul>
     	</li>

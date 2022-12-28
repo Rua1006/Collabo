@@ -131,3 +131,23 @@ create SEQUENCE yseq;
 insert into yearDis values (yseq.nextval, '더미 데이터', '200000', '150000', '120000', '100000', '110000', '2022-12-01 ~ 2022-12-31', '더미 타겟', '유의사항!');
 select * from yeardis;
 commit;
+
+-- 묻고 답하기_qna(글번호, 작성자, 글제목, 글내용, 작성일, 읽어본 횟수, 글그룹번호, 답변수준, 글깊이)
+create table re_qna(
+    qno number primary key,
+    author varchar2(100) not null,
+    title varchar2(255) not null,
+    content varchar2(1000) not null,
+    regdate date default sysdate,
+    hit number default 0,
+    lev number,
+    parno number,
+    sec varchar2(10)
+);
+
+create sequence qna_rseq;
+
+commit;
+
+insert into re_qna values(qna_rseq.nextval, 'test', '문의합니다 제목1', '문의합니다  내용1', sysdate, 0);
+INSERT INTO qna(title, content, author, lev, parno, sec) VALUES (?,?,?,?,?,?);
