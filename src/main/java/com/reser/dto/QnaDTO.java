@@ -11,7 +11,7 @@ public class QnaDTO {
     private String content;	//내용
     private String regdate;	//작성일
     private int hit;	//조회수
-    private int lev;	//깊이
+    private int lev;	//깊이 (0==질문, 1==답변)
     private int parno;	//부모글 번호
     private String sec;	//비밀글
 

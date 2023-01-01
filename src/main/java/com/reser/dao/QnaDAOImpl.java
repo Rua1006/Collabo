@@ -26,7 +26,13 @@ public class QnaDAOImpl implements QnaDAO {
 
 	@Override
 	public void addQna(QnaDTO qna) throws Exception {
-		// TODO Auto-generated method stub
+		sqlSession.insert("qna.qnaInsert", qna);
+		
+	}
+
+	@Override
+	public void addReply(QnaDTO qna) throws Exception {
+		sqlSession.insert("qna.replyInsert", qna);
 		
 	}
 	
